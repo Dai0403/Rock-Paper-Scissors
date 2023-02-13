@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css">
     <title>Document</title>
   </head>
   <body>
-    <button id="continue">next round</button>
+
+    <div id="choice-container">
+      <div id="user-choice">Your Choice: &#10067</div>
+      <div id="com-choice">Computer's Choice: &#10067</div>
+    </div>
+    <div id="score-container">
+      <div id="user-score">Your Score: 0</div>
+      <div id="com-score">Computer's Score: 0</div>
+    </div>
+    <div id="result">
+      <div id="round-result">choose</div>
+      <div id="round-message">score 5 points first!</div>
+    </div>
+
+    <button value="rock" class="btn">rock</button>
+    <button value="scissors" class="btn">scissors</button>
+    <button value="paper" class="btn">paper</button>
+    <div class="overlay" id="overlay"></div>
+
+    <div class = 'modal' id="endgameModal">
+      <p class ='modal-title' id="endgameMsg"> </p>
+    <button class="btn btn-restart" id='btn-restart'>Again</button>
+     </div>
     <script src="script.js"></script>
   </body>
 </html>
